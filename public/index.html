@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Click Tracker</title>
+</head>
+
+<body>
+  <form method="POST" action="/click">
+    <input value="Click" type="submit">
+  </form>
+
+  <script>
+    (async () => {
+      const response = await fetch('/clicks')
+      const body = await response.json()
+      console.log(body.data.clicks?.count)
+    })();
+  </script>
+</body>
+</html>

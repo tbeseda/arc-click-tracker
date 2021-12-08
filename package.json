@@ -1,0 +1,14 @@
+{
+  "name": "click-tracker",
+  "version": "0.0.0",
+  "description": "track clicks",
+  "scripts": {
+    "start": "npx sandbox"
+  },
+  "devDependencies": {
+    "@architect/architect": "^9.4.2"
+  },
+  "dependencies": {
+    "@architect/functions": "^4.1.1"
+  }
+}
